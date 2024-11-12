@@ -67,7 +67,7 @@ export default function App() {
         </Button>
       </div>
       {friend !== null && (
-        <FormSplitBill friend={friend} onClick={handleUpdate} />
+        <FormSplitBill friend={friend} onClick={handleUpdate} key={friend.id} />
       )}
     </div>
   );
